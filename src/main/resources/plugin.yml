@@ -1,0 +1,17 @@
+name: SwordReroll
+version: 1.0.0
+main: com.enderdevelopment.plugin.Main
+api-version: "1.21"
+description: Adds stat rerolling for swords with a percentage range of -20% to +60%.
+commands:
+  reroll:
+    description: Rerolls the stat percentage on the sword in your hand.
+    usage: /reroll
+  setstat:
+    description: Sets the stat percentage on the sword in your hand to a specific value.
+    usage: /setstat <percentage>
+    permission: swordreroll.admin
+permissions:
+  swordreroll.admin:
+    description: Allows using the setstat command.
+    default: op
